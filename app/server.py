@@ -34,11 +34,11 @@ For more details, refer to the FastMCP documentation: https://gofastmcp.com/clie
 from typing import Dict, Any
 
 from fastmcp import FastMCP
-from openai_agents.mcp.tools.serper_tool import fetch_serper_news
-from openai_agents.mcp.tools.add_tool import add
+from tools.serper_tool import fetch_serper_news
+from tools.add_tool import add
 
 # Initialize the MCP server
-mcp = FastMCP(name="newsletter-mcp-server")
+mcp = FastMCP(name="mcp-server")
 
 
 @mcp.tool()
